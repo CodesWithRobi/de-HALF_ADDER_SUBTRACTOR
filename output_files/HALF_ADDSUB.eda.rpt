@@ -1,5 +1,5 @@
 EDA Netlist Writer report for HALF_ADDSUB
-Sun Mar 31 18:22:37 2024
+Mon Apr 01 03:52:02 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Mar 31 18:22:37 2024 ;
+; EDA Netlist Writer Status ; Successful - Mon Apr 01 03:52:02 2024 ;
 ; Revision Name             ; HALF_ADDSUB                           ;
 ; Top-level Entity Name     ; HALF_ADDSUB                           ;
 ; Family                    ; Cyclone II                            ;
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Mar 31 18:22:37 2024
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off HALF_ADDSUB -c HALF_ADDSUB
+    Info: Processing started: Mon Apr 01 03:52:02 2024
+Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog HALF_ADDSUB -c HALF_ADDSUB
 Info (204019): Generated file HALF_ADDSUB.vo in folder "X:/SAVEETHA/S2/DE/de-HALF_ADDER_SUBTRACTOR/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4523 megabytes
-    Info: Processing ended: Sun Mar 31 18:22:37 2024
+    Info: Peak virtual memory: 4513 megabytes
+    Info: Processing ended: Mon Apr 01 03:52:02 2024
     Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

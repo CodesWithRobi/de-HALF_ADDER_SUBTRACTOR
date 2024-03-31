@@ -1,4 +1,6 @@
 # do HALF_ADDSUB.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module HALF_ADDSUB
 # 
@@ -18,6 +20,7 @@
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading work.HALF_ADDSUB_vlg_sample_tst
 # Loading work.HALF_ADDSUB_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE

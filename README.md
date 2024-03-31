@@ -35,6 +35,9 @@ Figure -02 HALF Subtractor
 
 **Truthtable**
 
+![adder](tt1.png)
+![subtractor](tt2.png)
+
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -72,7 +75,8 @@ Developed by: RegisterNumber: 212223040170
 
 **Output/TIMING Waveform**
 
-![compile](compilation.png)
+![waveform](waveform.png)
 
 **Result:**
+![compile](compilation.png)
 Successfully simulated
