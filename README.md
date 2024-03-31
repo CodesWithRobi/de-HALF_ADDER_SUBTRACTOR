@@ -50,6 +50,7 @@ Figure -02 HALF Subtractor
 
 **Program:**
 
+```
 module HALF_ADDSUB(a,b,sum,carry,D,Bo);
 input a,b;
 output sum,carry,D,Bo; // Outputs sum and carry for half adder:Outputs difference D,Borrow Bo for half subtractor
@@ -61,6 +62,7 @@ and(carry, a, b);
 assign D = sum;
 assign Bo = ~a & b;
 endmodule
+```
 
 Developed by: RegisterNumber: 212223040170
 
