@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for HALF_ADDSUB
-Mon Jan 22 15:16:24 2024
+Sun Mar 31 18:22:36 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,19 +16,23 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Slow Model Datasheet Report
- 12. Fast Model Setup Summary
- 13. Fast Model Hold Summary
- 14. Fast Model Recovery Summary
- 15. Fast Model Removal Summary
- 16. Fast Model Minimum Pulse Width Summary
- 17. Fast Model Datasheet Report
- 18. Multicorner Timing Analysis Summary
- 19. Clock Transfers
- 20. Report TCCS
- 21. Report RSKM
- 22. Unconstrained Paths
- 23. TimeQuest Timing Analyzer Messages
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
 
 
 
@@ -70,7 +74,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -117,10 +121,36 @@ No paths to report.
 No paths to report.
 
 
--------------------------------
-; Slow Model Datasheet Report ;
--------------------------------
-Nothing to report.
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; a          ; Bo          ;       ; 9.647 ; 9.647 ;       ;
+; a          ; D           ; 9.280 ; 9.280 ; 9.280 ; 9.280 ;
+; a          ; carry       ; 9.667 ;       ;       ; 9.667 ;
+; a          ; sum         ; 9.290 ; 9.290 ; 9.290 ; 9.290 ;
+; b          ; Bo          ; 5.732 ;       ;       ; 5.732 ;
+; b          ; D           ; 5.317 ; 5.317 ; 5.317 ; 5.317 ;
+; b          ; carry       ; 5.731 ;       ;       ; 5.731 ;
+; b          ; sum         ; 5.327 ; 5.327 ; 5.327 ; 5.327 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; a          ; Bo          ;       ; 9.647 ; 9.647 ;       ;
+; a          ; D           ; 9.280 ; 9.280 ; 9.280 ; 9.280 ;
+; a          ; carry       ; 9.667 ;       ;       ; 9.667 ;
+; a          ; sum         ; 9.290 ; 9.290 ; 9.290 ; 9.290 ;
+; b          ; Bo          ; 5.732 ;       ;       ; 5.732 ;
+; b          ; D           ; 5.317 ; 5.317 ; 5.317 ; 5.317 ;
+; b          ; carry       ; 5.731 ;       ;       ; 5.731 ;
+; b          ; sum         ; 5.327 ; 5.327 ; 5.327 ; 5.327 ;
++------------+-------------+-------+-------+-------+-------+
 
 
 ----------------------------
@@ -153,10 +183,36 @@ No paths to report.
 No paths to report.
 
 
--------------------------------
-; Fast Model Datasheet Report ;
--------------------------------
-Nothing to report.
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; a          ; Bo          ;       ; 5.445 ; 5.445 ;       ;
+; a          ; D           ; 5.188 ; 5.188 ; 5.188 ; 5.188 ;
+; a          ; carry       ; 5.449 ;       ;       ; 5.449 ;
+; a          ; sum         ; 5.198 ; 5.198 ; 5.198 ; 5.198 ;
+; b          ; Bo          ; 3.004 ;       ;       ; 3.004 ;
+; b          ; D           ; 2.748 ; 2.748 ; 2.748 ; 2.748 ;
+; b          ; carry       ; 3.003 ;       ;       ; 3.003 ;
+; b          ; sum         ; 2.758 ; 2.758 ; 2.758 ; 2.758 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; a          ; Bo          ;       ; 5.445 ; 5.445 ;       ;
+; a          ; D           ; 5.188 ; 5.188 ; 5.188 ; 5.188 ;
+; a          ; carry       ; 5.449 ;       ;       ; 5.449 ;
+; a          ; sum         ; 5.198 ; 5.198 ; 5.198 ; 5.198 ;
+; b          ; Bo          ; 3.004 ;       ;       ; 3.004 ;
+; b          ; D           ; 2.748 ; 2.748 ; 2.748 ; 2.748 ;
+; b          ; carry       ; 3.003 ;       ;       ; 3.003 ;
+; b          ; sum         ; 2.758 ; 2.758 ; 2.758 ; 2.758 ;
++------------+-------------+-------+-------+-------+-------+
 
 
 +----------------------------------------------------------------------------+
@@ -167,6 +223,38 @@ Nothing to report.
 ; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
 ; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
 +------------------+-------+------+----------+---------+---------------------+
+
+
++----------------------------------------------------------+
+; Progagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; a          ; Bo          ;       ; 9.647 ; 9.647 ;       ;
+; a          ; D           ; 9.280 ; 9.280 ; 9.280 ; 9.280 ;
+; a          ; carry       ; 9.667 ;       ;       ; 9.667 ;
+; a          ; sum         ; 9.290 ; 9.290 ; 9.290 ; 9.290 ;
+; b          ; Bo          ; 5.732 ;       ;       ; 5.732 ;
+; b          ; D           ; 5.317 ; 5.317 ; 5.317 ; 5.317 ;
+; b          ; carry       ; 5.731 ;       ;       ; 5.731 ;
+; b          ; sum         ; 5.327 ; 5.327 ; 5.327 ; 5.327 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Progagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; a          ; Bo          ;       ; 5.445 ; 5.445 ;       ;
+; a          ; D           ; 5.188 ; 5.188 ; 5.188 ; 5.188 ;
+; a          ; carry       ; 5.449 ;       ;       ; 5.449 ;
+; a          ; sum         ; 5.198 ; 5.198 ; 5.198 ; 5.198 ;
+; b          ; Bo          ; 3.004 ;       ;       ; 3.004 ;
+; b          ; D           ; 2.748 ; 2.748 ; 2.748 ; 2.748 ;
+; b          ; carry       ; 3.003 ;       ;       ; 3.003 ;
+; b          ; sum         ; 2.758 ; 2.758 ; 2.758 ; 2.758 ;
++------------+-------------+-------+-------+-------+-------+
 
 
 -------------------
@@ -194,10 +282,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 0     ; 0    ;
-; Unconstrained Input Port Paths  ; 0     ; 0    ;
-; Unconstrained Output Ports      ; 0     ; 0    ;
-; Unconstrained Output Port Paths ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 8     ; 8    ;
+; Unconstrained Output Ports      ; 4     ; 4    ;
+; Unconstrained Output Port Paths ; 8     ; 8    ;
 +---------------------------------+-------+------+
 
 
@@ -207,7 +295,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jan 22 15:16:22 2024
+    Info: Processing started: Sun Mar 31 18:22:34 2024
 Info: Command: quartus_sta HALF_ADDSUB -c HALF_ADDSUB
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -235,12 +323,12 @@ Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332101): Design is fully constrained for setup requirements
-Info (332101): Design is fully constrained for hold requirements
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4529 megabytes
-    Info: Processing ended: Mon Jan 22 15:16:24 2024
+    Info: Peak virtual memory: 4534 megabytes
+    Info: Processing ended: Sun Mar 31 18:22:36 2024
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

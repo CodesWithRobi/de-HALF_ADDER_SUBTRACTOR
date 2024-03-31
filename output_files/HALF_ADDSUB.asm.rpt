@@ -1,5 +1,5 @@
 Assembler report for HALF_ADDSUB
-Mon Jan 22 15:16:21 2024
+Sun Mar 31 18:22:33 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: E:/Quartus II/HALF_ADDSUB/output_files/HALF_ADDSUB.sof
-  6. Assembler Device Options: E:/Quartus II/HALF_ADDSUB/output_files/HALF_ADDSUB.pof
+  5. Assembler Device Options: X:/SAVEETHA/S2/DE/de-HALF_ADDER_SUBTRACTOR/output_files/HALF_ADDSUB.sof
+  6. Assembler Device Options: X:/SAVEETHA/S2/DE/de-HALF_ADDER_SUBTRACTOR/output_files/HALF_ADDSUB.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Jan 22 15:16:21 2024 ;
+; Assembler Status      ; Successful - Sun Mar 31 18:22:33 2024 ;
 ; Revision Name         ; HALF_ADDSUB                           ;
 ; Top-level Entity Name ; HALF_ADDSUB                           ;
 ; Family                ; Cyclone II                            ;
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+--------------------------------------------------------+
-; Assembler Generated Files                              ;
-+--------------------------------------------------------+
-; File Name                                              ;
-+--------------------------------------------------------+
-; E:/Quartus II/HALF_ADDSUB/output_files/HALF_ADDSUB.sof ;
-; E:/Quartus II/HALF_ADDSUB/output_files/HALF_ADDSUB.pof ;
-+--------------------------------------------------------+
++-------------------------------------------------------------------------+
+; Assembler Generated Files                                               ;
++-------------------------------------------------------------------------+
+; File Name                                                               ;
++-------------------------------------------------------------------------+
+; X:/SAVEETHA/S2/DE/de-HALF_ADDER_SUBTRACTOR/output_files/HALF_ADDSUB.sof ;
+; X:/SAVEETHA/S2/DE/de-HALF_ADDER_SUBTRACTOR/output_files/HALF_ADDSUB.pof ;
++-------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------+
-; Assembler Device Options: E:/Quartus II/HALF_ADDSUB/output_files/HALF_ADDSUB.sof ;
-+----------------+-----------------------------------------------------------------+
-; Option         ; Setting                                                         ;
-+----------------+-----------------------------------------------------------------+
-; Device         ; EP2C5T144C6                                                     ;
-; JTAG usercode  ; 0x0007302E                                                      ;
-; Checksum       ; 0x0007302E                                                      ;
-+----------------+-----------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Assembler Device Options: X:/SAVEETHA/S2/DE/de-HALF_ADDER_SUBTRACTOR/output_files/HALF_ADDSUB.sof ;
++----------------+----------------------------------------------------------------------------------+
+; Option         ; Setting                                                                          ;
++----------------+----------------------------------------------------------------------------------+
+; Device         ; EP2C5T144C6                                                                      ;
+; JTAG usercode  ; 0x0007399E                                                                       ;
+; Checksum       ; 0x0007399E                                                                       ;
++----------------+----------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------+
-; Assembler Device Options: E:/Quartus II/HALF_ADDSUB/output_files/HALF_ADDSUB.pof ;
-+--------------------+-------------------------------------------------------------+
-; Option             ; Setting                                                     ;
-+--------------------+-------------------------------------------------------------+
-; Device             ; EPCS4                                                       ;
-; JTAG usercode      ; 0x00000000                                                  ;
-; Checksum           ; 0x07535071                                                  ;
-; Compression Ratio  ; 3                                                           ;
-+--------------------+-------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Assembler Device Options: X:/SAVEETHA/S2/DE/de-HALF_ADDER_SUBTRACTOR/output_files/HALF_ADDSUB.pof ;
++--------------------+------------------------------------------------------------------------------+
+; Option             ; Setting                                                                      ;
++--------------------+------------------------------------------------------------------------------+
+; Device             ; EPCS4                                                                        ;
+; JTAG usercode      ; 0x00000000                                                                   ;
+; Checksum           ; 0x07533458                                                                   ;
+; Compression Ratio  ; 3                                                                            ;
++--------------------+------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -117,13 +117,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jan 22 15:16:20 2024
+    Info: Processing started: Sun Mar 31 18:22:32 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off HALF_ADDSUB -c HALF_ADDSUB
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4547 megabytes
-    Info: Processing ended: Mon Jan 22 15:16:21 2024
+    Info: Peak virtual memory: 4552 megabytes
+    Info: Processing ended: Sun Mar 31 18:22:33 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
