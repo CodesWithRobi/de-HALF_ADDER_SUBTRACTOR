@@ -80,3 +80,4 @@ Developed by: RegisterNumber: 212223040170
 **Result:**
 ![compile](compilation.png)
 Successfully simulated
+Thus the Half Adder and Half Subtractor circuits are designed and the truth tables is verified using Quartus software.
